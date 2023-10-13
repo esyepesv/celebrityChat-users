@@ -1,4 +1,4 @@
-package com.cc.users.infrastructure.input.rest;
+package com.cc.users.infrastructure.adapter.input.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 
