@@ -23,12 +23,17 @@ public class UserUseCase implements IUserServicePort {
     }
 
     @Override
-    public Long updateUser(User user) {
-        return userPersistencePort.updateUser(user);
+    public User getUser(String username) {
+        return userPersistencePort.getUser(username);
     }
 
     @Override
-    public Long deleteUser(Long id) {
-        return userPersistencePort.deleteUser(id);
+    public void updateUser(User user) {
+        userPersistencePort.updateUser(user);
+    }
+
+    @Override
+    public void deleteUser(Long id) {
+        userPersistencePort.deleteUser(id);
     }
 }

@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: jdbc:mysql://users.c6dbmianpmse.us-east-1.rds.amazonaws.com/users
+    username: admin
+    password: admin123
 
   jpa:
     hibernate:

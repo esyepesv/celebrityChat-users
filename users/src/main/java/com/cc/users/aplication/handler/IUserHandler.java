@@ -6,6 +6,7 @@ import com.cc.users.domain.model.User;
 public interface IUserHandler {
     public Long saveUser(UserDto user);
     public UserDto getUser(Long id);
-    public Long updateUser(UserDto user);
-    public Long deleteUser(Long id);
+    public UserDto getUser(String username);
+    public void updateUser(UserDto user);
+    public void deleteUser(Long id);
 }
